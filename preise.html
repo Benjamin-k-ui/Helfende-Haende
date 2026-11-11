@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Die Preise von Helfende Hände Thun.">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Preise – Helfende Hände Thun</title>
+</head>
+<body>
+    <header class="header">
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü" onclick="toggleMenu()">☰</button>
+        <a class="logo" href="index.html">Helfende Hände Thun</a>
+        <nav class="menu" id="menu" aria-label="Menü">
+            <a href="index.html">Home</a>
+            <a href="angebot.html">Angebot</a>
+            <a class="active" href="preise.html">Preise</a>
+            <a href="about.html">Über uns</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="small-title">Preise</p>
+            <h1 class="split">Was es <span>kostet</span></h1>
+            <p class="intro-text split">Sie bezahlen nur die Zeit, in der wir bei Ihnen sind. Keine Anmeldegebühr und kein langer Vertrag.</p>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Einzeln</span>
+                <h2>Pro Stunde</h2>
+                <p class="price">CHF 48.– <small>/ Stunde</small></p>
+                <p>Gut, wenn Sie nur ab und zu Hilfe brauchen. Ein Besuch dauert mindestens eine Stunde.</p>
+            </article>
+            <div class="diamond fade"><span>🕐</span></div>
+        </section>
+
+        <section class="row flip">
+            <article class="box popular fade">
+                <span class="badge">Beliebt</span>
+                <span class="label">Abo</span>
+                <h2>10er-Abo</h2>
+                <p class="price">CHF 440.– <small>/ 10 Stunden</small></p>
+                <p>Sie sparen 40 Franken. Die Stunden sind ein Jahr lang gültig.</p>
+            </article>
+            <div class="diamond fade"><span>🎟️</span></div>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Jeden Monat</span>
+                <h2>Monats-Paket</h2>
+                <p class="price">CHF 360.– <small>/ Monat</small></p>
+                <p>Acht Stunden im Monat, zum Beispiel zweimal pro Woche. Immer am gleichen Tag mit der gleichen Person. Jeden Monat kündbar.</p>
+            </article>
+            <div class="diamond fade"><span>📅</span></div>
+        </section>
+
+        <section class="row flip">
+            <article class="box fade">
+                <span class="label">Gut zu wissen</span>
+                <h2>Was noch dazukommt</h2>
+                <p>Am Samstag kostet eine Stunde 8 Franken mehr. Fahren wir Sie mit dem Auto, verrechnen wir 80 Rappen pro Kilometer. Wenn Sie einen Termin einen Tag vorher absagen, kostet das nichts.</p>
+            </article>
+            <div class="diamond fade"><span>➕</span></div>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Ablauf</span>
+                <h2>So fangen wir an</h2>
+                <ol class="steps">
+                    <li>Sie rufen an oder schreiben uns.</li>
+                    <li>Wir kommen zu einem gratis Treffen vorbei.</li>
+                    <li>Wir suchen die passende Person für Sie.</li>
+                    <li>Es geht los, meistens noch in der gleichen Woche.</li>
+                </ol>
+                <a class="more" href="contact.html">Kontakt aufnehmen →</a>
+            </article>
+            <div class="diamond fade"><span>📞</span></div>
+        </section>
+    </main>
+
+    <div class="bottom-bar">
+        <button class="btn" type="button" onclick="go('index.html')">Home</button>
+        <button class="btn" type="button" onclick="go('angebot.html')">Angebot</button>
+        <button class="btn active" type="button" onclick="go('preise.html')">Preise</button>
+        <button class="btn" type="button" onclick="go('about.html')">Über uns</button>
+        <button class="btn" type="button" onclick="go('contact.html')">Kontakt</button>
+    </div>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <h2>Helfende Hände Thun</h2>
+                <p>Wir helfen älteren Menschen im Alltag, damit sie gut zu Hause leben können.</p>
+            </div>
+            <nav class="footer-col" aria-label="Footer">
+                <h2>Seiten</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="angebot.html">Angebot</a></li>
+                    <li><a href="preise.html">Preise</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h2>Kontakt</h2>
+                <address>Helfende Hände GmbH<br>Bahnhofstrasse 21, 3600 Thun<br>033 555 12 34<br>hallo@helfende-haende.ch</address>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Helfende Hände Thun</p>
+            <p><a href="contact.html#datenschutz">Datenschutz</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

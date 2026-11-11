@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontakt zu Helfende Hände Thun.">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Kontakt – Helfende Hände Thun</title>
+</head>
+<body>
+    <header class="header">
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü" onclick="toggleMenu()">☰</button>
+        <a class="logo" href="index.html">Helfende Hände Thun</a>
+        <nav class="menu" id="menu" aria-label="Menü">
+            <a href="index.html">Home</a>
+            <a href="angebot.html">Angebot</a>
+            <a href="preise.html">Preise</a>
+            <a href="about.html">Über uns</a>
+            <a class="active" href="contact.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="small-title">Kontakt</p>
+            <h1 class="split">Schreiben Sie <span>uns</span></h1>
+            <p class="intro-text split">Haben Sie eine Frage oder möchten Sie ein Treffen abmachen? Wir melden uns innert zwei Tagen.</p>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Formular</span>
+                <h2>Nachricht senden</h2>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" required>
+                    <label for="message">Wobei können wir helfen?</label>
+                    <textarea id="message" required></textarea>
+                    <label class="check"><input type="checkbox" required> Meine Angaben dürfen für die Antwort gespeichert werden.</label>
+                    <button class="btn btn-main" type="submit">Absenden</button>
+                    <p id="thanks" class="accent" hidden>Danke! Wir melden uns bald bei Ihnen.</p>
+                </form>
+            </article>
+            <div class="diamond fade"><span>✉️</span></div>
+        </section>
+
+        <section class="row flip">
+            <article class="box fade">
+                <span class="label">Direkt</span>
+                <h2>Telefon und Adresse</h2>
+                <address>
+                    <p>Helfende Hände GmbH<br>Bahnhofstrasse 21<br>3600 Thun</p>
+                    <p>033 555 12 34<br>hallo@helfende-haende.ch</p>
+                </address>
+                <p>Unser Büro ist zwei Minuten vom Bahnhof entfernt. Kommen Sie gerne vorbei.</p>
+            </article>
+            <div class="diamond fade"><span>📞</span></div>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Erreichbarkeit</span>
+                <h2>Wann wir da sind</h2>
+                <ul class="times">
+                    <li><span>Montag bis Freitag</span><span>8 – 17 Uhr</span></li>
+                    <li><span>Samstag</span><span>9 – 12 Uhr</span></li>
+                    <li><span>Sonntag</span><span>geschlossen</span></li>
+                </ul>
+            </article>
+            <div class="diamond fade"><span>🕐</span></div>
+        </section>
+
+        <section class="row flip" id="datenschutz">
+            <article class="box fade">
+                <span class="label">Datenschutz</span>
+                <h2>Ihre Daten</h2>
+                <p>Ihre Angaben aus dem Formular brauchen wir nur für die Antwort. Wir geben sie niemandem weiter. Eine kurze E-Mail reicht, und wir löschen alles.</p>
+                <p>Das ist ein Schulprojekt, das Formular verschickt keine echten Nachrichten.</p>
+            </article>
+            <div class="diamond fade"><span>🔒</span></div>
+        </section>
+    </main>
+
+    <div class="bottom-bar">
+        <button class="btn" type="button" onclick="go('index.html')">Home</button>
+        <button class="btn" type="button" onclick="go('angebot.html')">Angebot</button>
+        <button class="btn" type="button" onclick="go('preise.html')">Preise</button>
+        <button class="btn" type="button" onclick="go('about.html')">Über uns</button>
+        <button class="btn active" type="button" onclick="go('contact.html')">Kontakt</button>
+    </div>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <h2>Helfende Hände Thun</h2>
+                <p>Wir helfen älteren Menschen im Alltag, damit sie gut zu Hause leben können.</p>
+            </div>
+            <nav class="footer-col" aria-label="Footer">
+                <h2>Seiten</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="angebot.html">Angebot</a></li>
+                    <li><a href="preise.html">Preise</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h2>Kontakt</h2>
+                <address>Helfende Hände GmbH<br>Bahnhofstrasse 21, 3600 Thun<br>033 555 12 34<br>hallo@helfende-haende.ch</address>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Helfende Hände Thun</p>
+            <p><a href="contact.html#datenschutz">Datenschutz</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

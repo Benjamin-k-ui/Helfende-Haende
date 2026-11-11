@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Helfende Hände Thun – Alltagshilfe für ältere Menschen in Thun und Umgebung.">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Helfende Hände Thun</title>
+</head>
+<body>
+    <header class="header">
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü" onclick="toggleMenu()">☰</button>
+        <a class="logo" href="index.html">Helfende Hände Thun</a>
+        <nav class="menu" id="menu" aria-label="Menü">
+            <a class="active" href="index.html">Home</a>
+            <a href="angebot.html">Angebot</a>
+            <a href="preise.html">Preise</a>
+            <a href="about.html">Über uns</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="small-title">Alltagshilfe in Thun</p>
+            <h1 class="split">Eine helfende Hand für Ihren <span>Alltag.</span></h1>
+            <p class="intro-text split">Einkaufen, putzen, zum Arzt oder einfach zusammen einen Kaffee trinken. Wir sind da, wenn es alleine nicht mehr so gut geht.</p>
+            <div class="intro-buttons">
+                <button class="btn btn-main" type="button" onclick="go('contact.html')">Gratis Treffen abmachen</button>
+                <button class="btn btn-line" type="button" onclick="go('angebot.html')">Was wir machen</button>
+            </div>
+        </section>
+
+        <section class="facts">
+            <div class="fact fade"><b>40</b><span>Helferinnen und Helfer</span></div>
+            <div class="fact fade"><b>Mo–Sa</b><span>von 7 bis 19 Uhr</span></div>
+            <div class="fact fade"><b>Gratis</b><span>das erste Treffen</span></div>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Willkommen</span>
+                <h2>Schön, dass Sie da sind</h2>
+                <p>Die meisten Menschen möchten so lange wie möglich in ihrer eigenen Wohnung bleiben. Wir helfen dabei. Sie sagen uns, was Sie brauchen, und wir kommen vorbei.</p>
+            </article>
+            <div class="diamond fade"><span>👋</span></div>
+        </section>
+
+        <section class="row flip">
+            <article class="box fade">
+                <span class="label">Angebot</span>
+                <h2>Was wir machen</h2>
+                <p>Wir gehen einkaufen, helfen im Haushalt, begleiten Sie zum Arzt und haben Zeit für ein Gespräch. Eigentlich alles, was im Alltag anfällt.</p>
+                <a class="more" href="angebot.html">Mehr dazu →</a>
+            </article>
+            <div class="diamond fade"><span>🛒</span></div>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Für Angehörige</span>
+                <h2>Sie müssen nicht alles allein machen</h2>
+                <p>Viele Kinder arbeiten und wohnen weit weg von ihren Eltern. Wir übernehmen einen Teil und schicken Ihnen nach jedem Besuch eine kurze Nachricht, wenn Sie das möchten.</p>
+            </article>
+            <div class="diamond fade"><span>💬</span></div>
+        </section>
+
+        <section class="row flip">
+            <article class="box fade">
+                <span class="label">Vertrauen</span>
+                <h2>Immer die gleiche Person</h2>
+                <p>Bei uns kommt nicht jede Woche jemand anderes. Sie haben eine feste Helferin oder einen festen Helfer, den Sie mit der Zeit gut kennen.</p>
+            </article>
+            <div class="diamond fade"><span>🤝</span></div>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Erster Schritt</span>
+                <h2>Das erste Treffen kostet nichts</h2>
+                <p>Wir kommen zu Ihnen nach Hause, trinken einen Kaffee und reden darüber, was Sie brauchen. Danach entscheiden Sie in Ruhe.</p>
+                <a class="more" href="contact.html">Treffen abmachen →</a>
+            </article>
+            <div class="diamond fade"><span>☕</span></div>
+        </section>
+    </main>
+
+    <div class="bottom-bar">
+        <button class="btn active" type="button" onclick="go('index.html')">Home</button>
+        <button class="btn" type="button" onclick="go('angebot.html')">Angebot</button>
+        <button class="btn" type="button" onclick="go('preise.html')">Preise</button>
+        <button class="btn" type="button" onclick="go('about.html')">Über uns</button>
+        <button class="btn" type="button" onclick="go('contact.html')">Kontakt</button>
+    </div>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <h2>Helfende Hände Thun</h2>
+                <p>Wir helfen älteren Menschen im Alltag, damit sie gut zu Hause leben können.</p>
+            </div>
+            <nav class="footer-col" aria-label="Footer">
+                <h2>Seiten</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="angebot.html">Angebot</a></li>
+                    <li><a href="preise.html">Preise</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h2>Kontakt</h2>
+                <address>Helfende Hände GmbH<br>Bahnhofstrasse 21, 3600 Thun<br>033 555 12 34<br>hallo@helfende-haende.ch</address>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Helfende Hände Thun</p>
+            <p><a href="contact.html#datenschutz">Datenschutz</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

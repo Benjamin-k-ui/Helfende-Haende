@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Über Helfende Hände Thun: Geschichte, Team und Region.">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Über uns – Helfende Hände Thun</title>
+</head>
+<body>
+    <header class="header">
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menü" onclick="toggleMenu()">☰</button>
+        <a class="logo" href="index.html">Helfende Hände Thun</a>
+        <nav class="menu" id="menu" aria-label="Menü">
+            <a href="index.html">Home</a>
+            <a href="angebot.html">Angebot</a>
+            <a href="preise.html">Preise</a>
+            <a class="active" href="about.html">Über uns</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="small-title">Über uns</p>
+            <h1 class="split">Wer wir <span>sind</span></h1>
+            <p class="intro-text split">Wir sind ein kleines Team aus Thun und möchten, dass ältere Menschen gut zu Hause leben können.</p>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Geschichte</span>
+                <h2>Wie alles angefangen hat</h2>
+                <p>2019 brauchte die Grossmutter von Nadine Gerber plötzlich Hilfe. Die Familie wohnte weit weg und fand niemanden. Also hat Nadine selber ein paar Nachbarn organisiert. So ist Helfende Hände entstanden.</p>
+            </article>
+            <div class="diamond fade"><span>🌱</span></div>
+        </section>
+
+        <section class="row flip">
+            <article class="box fade">
+                <span class="label">Was uns wichtig ist</span>
+                <h2>Zeit statt Stress</h2>
+                <p>Wir nehmen uns Zeit, sind pünktlich und machen nichts, ohne Sie zu fragen. Unsere Leute bekommen einen fairen Lohn, damit sie gerne bei uns bleiben.</p>
+            </article>
+            <div class="diamond fade"><span>💡</span></div>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Team</span>
+                <h2>Die Leute im Büro</h2>
+                <p>Im Büro sind wir zu viert. Wir planen die Einsätze und sind für Sie da, wenn Sie Fragen haben. Unterwegs sind rund 40 Helferinnen und Helfer.</p>
+            </article>
+            <div class="diamond fade"><span>🤝</span></div>
+        </section>
+
+        <section class="team">
+            <article class="person fade">
+                <div class="initials">NG</div>
+                <h3>Nadine Gerber</h3>
+                <p>Gründerin</p>
+            </article>
+            <article class="person fade">
+                <div class="initials">LS</div>
+                <h3>Luca Steiner</h3>
+                <p>Einsatzplanung</p>
+            </article>
+            <article class="person fade">
+                <div class="initials">AM</div>
+                <h3>Aylin Meier</h3>
+                <p>Betreuung Helfer</p>
+            </article>
+            <article class="person fade">
+                <div class="initials">RB</div>
+                <h3>Reto Bühler</h3>
+                <p>Büro und Technik</p>
+            </article>
+        </section>
+
+        <section class="row flip">
+            <article class="box fade">
+                <span class="label">Auswahl</span>
+                <h2>Wer bei uns arbeitet</h2>
+                <p>Mit allen neuen Helferinnen und Helfern führen wir zuerst ein Gespräch. Sie bringen einen Strafregisterauszug mit und machen einen Erste-Hilfe-Kurs. Die ersten Einsätze sind immer zu zweit.</p>
+            </article>
+            <div class="diamond fade"><span>🔍</span></div>
+        </section>
+
+        <section class="row">
+            <article class="box fade">
+                <span class="label">Region</span>
+                <h2>Wo wir unterwegs sind</h2>
+                <p>In Thun und in den Dörfern rundherum, zum Beispiel Steffisburg, Heimberg, Spiez und Oberhofen. Wohnen Sie weiter weg? Rufen Sie trotzdem an.</p>
+            </article>
+            <div class="diamond fade"><span>📍</span></div>
+        </section>
+    </main>
+
+    <div class="bottom-bar">
+        <button class="btn" type="button" onclick="go('index.html')">Home</button>
+        <button class="btn" type="button" onclick="go('angebot.html')">Angebot</button>
+        <button class="btn" type="button" onclick="go('preise.html')">Preise</button>
+        <button class="btn active" type="button" onclick="go('about.html')">Über uns</button>
+        <button class="btn" type="button" onclick="go('contact.html')">Kontakt</button>
+    </div>
+
+    <footer>
+        <div class="footer-row">
+            <div class="footer-col">
+                <h2>Helfende Hände Thun</h2>
+                <p>Wir helfen älteren Menschen im Alltag, damit sie gut zu Hause leben können.</p>
+            </div>
+            <nav class="footer-col" aria-label="Footer">
+                <h2>Seiten</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="angebot.html">Angebot</a></li>
+                    <li><a href="preise.html">Preise</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="footer-col">
+                <h2>Kontakt</h2>
+                <address>Helfende Hände GmbH<br>Bahnhofstrasse 21, 3600 Thun<br>033 555 12 34<br>hallo@helfende-haende.ch</address>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Helfende Hände Thun</p>
+            <p><a href="contact.html#datenschutz">Datenschutz</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
